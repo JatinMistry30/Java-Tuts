@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 // public class FirstCode {
 //     public static void main(String[] args) {
 //         for(int i=0 ; i<=100 ; i++){
@@ -18,16 +18,30 @@
 //     }
 // }
 
+// public class FirstCode {
+//     public static void main(String[] args) {
+//         int number = 5;
+//         int result = 1; 
+
+//         for (int n = number; n >= 1; n--) {
+//             result *= n; 
+//         }
+
+//         System.out.println(result);  
+//     }
+// }
+
 public class FirstCode {
     public static void main(String[] args) {
-        int number = 5;
-        int result = 1; 
+        Scanner number = new Scanner(System.in);
+        int inpNumber = number.nextInt();
 
-        // Loop from number down to 1
-        for (int n = number; n >= 1; n--) {
-            result *= n; 
+        if (inpNumber % 2 == 1 || inpNumber == 2) {
+            System.out.println("The number " + inpNumber + "is prime number");
+        } else {
+            System.out.println("The number " + inpNumber + "is not prime number");
         }
 
-        System.out.println(result);  
+        number.close();
     }
 }
