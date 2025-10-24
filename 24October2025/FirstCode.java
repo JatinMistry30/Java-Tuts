@@ -7,13 +7,27 @@
 //     }    
 // }
 
-public class FirstCode {   
+// public class FirstCode {   
+//     public static void main(String[] args) {
+//         int number = 2;
+//         int result;
+//         for(int i=1 ; i<=10 ; i++){
+//             result = i *number;
+//             System.out.println("2 x"+i+"="+result);
+//         }
+//     }
+// }
+
+public class FirstCode {
     public static void main(String[] args) {
-        int number = 2;
-        int result;
-        for(int i=1 ; i<=10 ; i++){
-            result = i *number;
-            System.out.println("2 x"+i+"="+result);
+        int number = 5;
+        int result = 1; 
+
+        // Loop from number down to 1
+        for (int n = number; n >= 1; n--) {
+            result *= n; 
         }
+
+        System.out.println(result);  
     }
 }
