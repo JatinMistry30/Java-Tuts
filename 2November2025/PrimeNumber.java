@@ -8,13 +8,13 @@ public class PrimeNumber {
             }
         }
         if (count > 2){
-            System.out.println("%d is NOT prime "+num);
+            System.out.println("Is NOT prime "+num);
         }else{
-            System.out.println("%d is prime " +num);
+            System.out.println("Is prime " +num);
         }
         return 0;
     }
     public static void main(String[] args) {
-        Prime(1);
+        Prime(29);
     }    
 }
