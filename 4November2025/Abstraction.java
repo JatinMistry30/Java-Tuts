@@ -1,7 +1,10 @@
 abstract class Vehicle {
+    //Abstract methods
     abstract void accelerate();
     abstract void brake();
 
+
+    //Concrete Method
     void startEngine() {
         System.out.println("Engine started!");
     }
