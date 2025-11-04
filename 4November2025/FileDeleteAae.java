@@ -10,7 +10,7 @@ public class FileDeleteAae {
         Scanner scanner = new Scanner(System.in);
 
         // Set your parent directory path here
-        Path parentDir = Paths.get("/path/to/your/parent/directory");
+        Path parentDir = Paths.get("C:\\Users\\SHREEASHAPURAMAA\\Desktop\\Jatin\\Jatins Iphone");
 
         try (Stream<Path> walk = Files.walk(parentDir)) {
             // Collect all files ending with .aae
