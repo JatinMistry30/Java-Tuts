@@ -79,6 +79,6 @@ public class EmployeeEncapsulate {
         employee.displayInfo();
         employee.setSalary(-2000);
         employee.setExperience(-5);
-        employee.setDepartment(""); 
+        employee.setDepartment("");
     }
 }
