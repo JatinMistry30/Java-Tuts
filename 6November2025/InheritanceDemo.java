@@ -109,6 +109,28 @@ class Motorcycle extends Vehicle {
 
 public class InheritanceDemo {
     public static void main(String[] args) {
+        // Using the parent reference to hold child object (Polymorphism)
+        Vehicle car = new Car("Toyota", 2020, "Petrol", 4);
+        Vehicle eCar = new ElectricCar("Tesla", 2023, 75, 450);
+        Vehicle bike = new Motorcycle("Harley-Davidson", 2021, false);
+        System.out.println("\n--- Car ---");
+        car.start();
+        car.displayInfo();
+        car.stop();
 
+        System.out.println("\n--- Electric Car ---");
+        eCar.start();
+        eCar.displayInfo();
+        eCar.stop();
+
+        System.out.println("\n--- Motorcycle ---");
+        bike.start();
+        bike.displayInfo();
+        bike.stop();
+
+        System.out.println("\n--- Specific ElectricCar Behavior ---");
+        if (eCar instanceof ElectricCar) {
+            ((ElectricCar) eCar).chargeBattery();
+        }
     }
 }
