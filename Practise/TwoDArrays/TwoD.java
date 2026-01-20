@@ -20,7 +20,7 @@ public class TwoD {
                 numbers[i][j] = sc.nextInt();
             }
         }
-
+        System.out.println("This the Array");
         // Output
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < Columns; j++) {
@@ -28,6 +28,24 @@ public class TwoD {
 
             }
             System.out.println();
+        }
+
+        System.out.println("Enter the value");
+        int indexVal = sc.nextInt();
+
+        boolean found = false;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < Columns; j++) {
+                if (numbers[i][j] == indexVal) {
+                    System.out.println("The value " + indexVal + " is at index: (" + i + ", " + j + ")");
+                    found = true;
+                }
+            }
+        }
+
+        if (!found) {
+            System.out.println("Value not found");
         }
 
         sc.close();
